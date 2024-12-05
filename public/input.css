@@ -1,7 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-.borderObj{
-    @apply h-[100%] w-[10%] bg-red;
+*{
+    margin: 0;
+    padding: 0;
 }
+a{
+    text-decoration: none;
+}
+.borderObj{
+    @apply bg-primary-100 w-[280px] h-full z-10 rounded-lg;
+}
+.borderContainer{
+    @apply flex justify-around items-center w-[120%] h-[52px]  fixed top-[15px] right-[-80px];
+}
+.headingTxt{
+    @apply text-[260px] fixed left-56 top-12 text-primary-100 font-semibold tracking-widest font-inter;
+}
+.nextBtn{
+    @apply fixed bottom-4 right-4 bg-primary-200 px-[60px] text-[28px] rounded-[10px] text-primary-100 hover:translate-y-[-8px] transition-all duration-300;
+}
+.inputClass{
+    @apply bg-[#54C6D7] fixed left-[8%] w-[30vw] rounded-lg h-12 pl-4 text-primaryBg focus:outline-none placeholder:text-primaryBg placeholder:opacity-[0.6];
+}
+
