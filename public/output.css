@@ -572,6 +572,14 @@ video {
   bottom: -2.5rem;
 }
 
+.bottom-4{
+  bottom: 1rem;
+}
+
+.bottom-48{
+  bottom: 12rem;
+}
+
 .left-40{
   left: 10rem;
 }
@@ -580,8 +588,16 @@ video {
   left: 24rem;
 }
 
+.left-\[8\%\]{
+  left: 8%;
+}
+
 .right-0{
   right: 0px;
+}
+
+.right-4{
+  right: 1rem;
 }
 
 .right-64{
@@ -592,16 +608,8 @@ video {
   top: 15%;
 }
 
-.top-\[40\%\]{
-  top: 40%;
-}
-
 .top-\[45\%\]{
   top: 45%;
-}
-
-.top-\[56\%\]{
-  top: 56%;
 }
 
 .top-\[58\%\]{
@@ -622,6 +630,34 @@ video {
 
 .-ml-4{
   margin-left: -1rem;
+}
+
+.mt-\[30px\]{
+  margin-top: 30px;
+}
+
+.mt-\[40px\]{
+  margin-top: 40px;
+}
+
+.mt-\[60px\]{
+  margin-top: 60px;
+}
+
+.mt-\[150px\]{
+  margin-top: 150px;
+}
+
+.mt-\[200px\]{
+  margin-top: 200px;
+}
+
+.mt-\[280px\]{
+  margin-top: 280px;
+}
+
+.mt-\[300px\]{
+  margin-top: 300px;
 }
 
 .h-\[100vh\]{
@@ -677,9 +713,23 @@ video {
   animation: toweringKey 1.5s ease-out;
 }
 
+.\!bg-primary-100{
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(0 119 182 / var(--tw-bg-opacity, 1)) !important;
+}
+
 .bg-primaryBg{
   --tw-bg-opacity: 1;
   background-color: rgb(144 224 239 / var(--tw-bg-opacity, 1));
+}
+
+.\!py-\[5px\]{
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+}
+
+.\!text-\[22px\]{
+  font-size: 22px !important;
 }
 
 .\!text-\[40px\]{
@@ -692,6 +742,11 @@ video {
 
 .\!tracking-normal{
   letter-spacing: 0em !important;
+}
+
+.\!text-primary-200{
+  --tw-text-opacity: 1 !important;
+  color: rgb(0 180 216 / var(--tw-text-opacity, 1)) !important;
 }
 
 *{
@@ -737,8 +792,6 @@ a{
 
 .nextBtn{
   position: fixed;
-  bottom: 1rem;
-  right: 1rem;
   border-radius: 10px;
   --tw-bg-opacity: 1;
   background-color: rgb(0 180 216 / var(--tw-bg-opacity, 1));
@@ -758,8 +811,7 @@ a{
 }
 
 .inputClass{
-  position: fixed;
-  left: 8%;
+  margin-left: 8%;
   height: 3rem;
   width: 30vw;
   border-radius: 0.5rem;
@@ -786,4 +838,5 @@ a{
   outline: 2px solid transparent;
   outline-offset: 2px;
 }
+
 

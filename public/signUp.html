@@ -9,7 +9,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Sign Up</title>
 </head>
-<body class="bg-primaryBg">
+<body class="bg-primaryBg h-[100vh]">
     <div class="borderContainer">
         <div class="borderObj"></div>
         <div class="borderObj"></div>
@@ -18,19 +18,25 @@
         <div class="borderObj"></div>
         <div class="borderObj"></div>
     </div>
-    <p class="headingTxt !text-[90px] !top-32 !left-20">FLUX <span class="!text-[40px] !tracking-normal -ml-4">Signup</span></p>
+
+    <div class="">
+        <p class="headingTxt !text-[90px] !top-32 !left-20">FLUX <span class="!text-[40px] !tracking-normal -ml-4">Signup</span></p>
+
+        <form class="">
+            <input class="inputClass mt-[300px] !important" type="text" placeholder="Gmail">
+            <input class="inputClass mt-[280px] !important" type="text" placeholder="password">
+
+            <button class="nextBtn bottom-48 left-[8%] !text-[22px] !py-[5px] !bg-primary-100 !text-primary-200" type="submit">
+                Login
+            </button>
+        </form>
+    </div>
 
     <img src="bgEffect2.png" alt="" class="fixed right-0 top-[15%] w-[100vw] -z-10">
     <img src="bgEffect2.png" alt="" class="fixed right-0 top-[45%] w-[100vw] -z-10">
 
-    <form>
-        <input class="inputClass top-[40%]" type="text" placeholder="Gmail">
-        <input class="inputClass top-[56%]" type="text" placeholder="password">
-    </form>
-
-
     <img src="buildingExport.png" alt="" class="z-10 fixed right-64 w-[30%] -bottom-10 animate-towering">
-    <button class="nextBtn">
+    <button class="nextBtn bottom-4 right-4">
         <i class='bx bx-arrow-from-left'></i>
     </button>
 </body>
