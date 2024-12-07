@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -9,7 +9,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Sign Up</title>
 </head>
-<body class="bg-primaryBg h-[100vh]">
+<body class="bg-primaryBg h-[200vh] overflow-hidden scroll-smooth select-none">
     <div class="borderContainer">
         <div class="borderObj"></div>
         <div class="borderObj"></div>
@@ -19,16 +19,34 @@
         <div class="borderObj"></div>
     </div>
 
-    <div class="">
+    <div class="!mt-[9%] ml-20 flex flex-col w-[40%] scroll-m-[20vh] animate-emerge timeline" id="one">
         <p class="headingTxt !text-[90px] !top-32 !left-20">FLUX <span class="!text-[40px] !tracking-normal -ml-4">Signup</span></p>
 
-        <form class="">
-            <input class="inputClass mt-[300px] !important" type="text" placeholder="Gmail">
-            <input class="inputClass mt-[280px] !important" type="text" placeholder="password">
+        <form class="flex flex-col justify-between h-[200px]">
+            <input class="inputClass !important" type="text" placeholder="Gmail">
+            <input class="inputClass !important" type="text" placeholder="password">
 
-            <button class="nextBtn bottom-48 left-[8%] !text-[22px] !py-[5px] !bg-primary-100 !text-primary-200" type="submit">
-                Login
-            </button>
+            <a href="#two">
+                <button class="nextBtn !text-[22px] !py-[5px] !bg-primary-100 !text-primary-200 !static px-auto w-48 ml-[8%] mt-[30px]" type="button">
+                    Login
+                </button>
+            </a>
+
+        </form>
+    </div>
+
+    <div class="mt-[35%] ml-20 flex flex-col w-[40%]" id="two">
+        <p class="headingTxt !text-[90px] !top-32 !left-20">FLUX <span class="!text-[40px] !tracking-normal -ml-4">Login</span></p>
+
+        <form class="flex flex-col justify-between h-[200px]">
+            <input class="inputClass !important" type="text" placeholder="Gmail">
+            <input class="inputClass !important" type="text" placeholder="password">
+            <a href="#one">
+                <button class="nextBtn !text-[22px] !py-[5px] !bg-primary-100 !text-primary-200 !static px-auto w-48 ml-[8%] mt-[30px]" type="button">
+                    Signup
+                </button>
+            </a>
+
         </form>
     </div>
 

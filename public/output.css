@@ -556,6 +556,10 @@ video {
   display: none;
 }
 
+.\!static{
+  position: static !important;
+}
+
 .fixed{
   position: fixed;
 }
@@ -576,20 +580,16 @@ video {
   bottom: 1rem;
 }
 
-.bottom-48{
-  bottom: 12rem;
-}
-
 .left-40{
   left: 10rem;
 }
 
-.left-96{
-  left: 24rem;
+.left-56{
+  left: 14rem;
 }
 
-.left-\[8\%\]{
-  left: 8%;
+.left-96{
+  left: 24rem;
 }
 
 .right-0{
@@ -602,6 +602,10 @@ video {
 
 .right-64{
   right: 16rem;
+}
+
+.top-12{
+  top: 3rem;
 }
 
 .top-\[15\%\]{
@@ -628,40 +632,48 @@ video {
   z-index: 10;
 }
 
+.\!mt-\[9\%\]{
+  margin-top: 9% !important;
+}
+
 .-ml-4{
   margin-left: -1rem;
+}
+
+.ml-20{
+  margin-left: 5rem;
+}
+
+.ml-\[8\%\]{
+  margin-left: 8%;
 }
 
 .mt-\[30px\]{
   margin-top: 30px;
 }
 
-.mt-\[40px\]{
-  margin-top: 40px;
+.mt-\[35\%\]{
+  margin-top: 35%;
 }
 
-.mt-\[60px\]{
-  margin-top: 60px;
-}
-
-.mt-\[150px\]{
-  margin-top: 150px;
-}
-
-.mt-\[200px\]{
-  margin-top: 200px;
-}
-
-.mt-\[280px\]{
-  margin-top: 280px;
-}
-
-.mt-\[300px\]{
-  margin-top: 300px;
+.flex{
+  display: flex;
 }
 
 .h-\[100vh\]{
   height: 100vh;
+}
+
+.h-\[200px\]{
+  height: 200px;
+}
+
+.h-\[200vh\]{
+  height: 200vh;
+}
+
+.w-48{
+  width: 12rem;
 }
 
 .w-\[100vw\]{
@@ -676,9 +688,29 @@ video {
   width: 30%;
 }
 
+.w-\[40\%\]{
+  width: 40%;
+}
+
 .scale-x-\[-1\]{
   --tw-scale-x: -1;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+@keyframes emergeKey{
+  from{
+    opacity: 0;
+    transform: translateX(-20px);;
+  }
+
+  to{
+    opacity: 1;
+    transform: translateX(0);;
+  }
+}
+
+.animate-emerge{
+  animation: emergeKey 2.5s ease-out;
 }
 
 @keyframes slideKey{
@@ -711,6 +743,32 @@ video {
 
 .animate-towering{
   animation: toweringKey 1.5s ease-out;
+}
+
+.select-none{
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.scroll-m-\[20vh\]{
+  scroll-margin: 20vh;
+}
+
+.flex-col{
+  flex-direction: column;
+}
+
+.justify-between{
+  justify-content: space-between;
+}
+
+.overflow-hidden{
+  overflow: hidden;
+}
+
+.scroll-smooth{
+  scroll-behavior: smooth;
 }
 
 .\!bg-primary-100{
@@ -779,9 +837,6 @@ a{
 }
 
 .headingTxt{
-  position: fixed;
-  left: 14rem;
-  top: 3rem;
   font-family: Inter, sans-serif;
   font-size: 260px;
   font-weight: 600;
@@ -812,6 +867,7 @@ a{
 
 .inputClass{
   margin-left: 8%;
+  display: block;
   height: 3rem;
   width: 30vw;
   border-radius: 0.5rem;
@@ -839,4 +895,7 @@ a{
   outline-offset: 2px;
 }
 
+.timeline{
+  animation-timeline: "view()"
+}
 

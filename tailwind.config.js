@@ -17,7 +17,9 @@ module.exports = {
       },
       animation: {
         towering:"toweringKey 1.5s ease-out",
-        slide:"slideKey 1.5s ease-out"
+        slide:"slideKey 1.5s ease-out",
+        emerge:"emergeKey 2.5s ease-out",
+        unEmerge:"unEmergeKey 1.5s ease-out"
       },
       keyframes:{
         toweringKey:{
@@ -39,7 +41,20 @@ module.exports = {
             transform: "translateX(0);",
             opacity: 1,
           }
+        },
+        emergeKey:{
+          from:{
+            opacity: 0,
+            transform: "translateX(-20px);",
+          },
+          to:{
+            opacity: 1,
+            transform: "translateX(0);",
+          }
         }
+
+
+
       }
     },
   },
